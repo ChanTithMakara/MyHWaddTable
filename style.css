@@ -1,0 +1,104 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+    background-image:url('img/01.jpg');
+}
+.container {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+input{
+    border-radius: 50px;
+    text-align: center;
+}
+.BoxSub {
+  width: 100%;
+  height: 300px;
+  /* background-color: blue; */
+}
+.BoxSub label {
+  padding: 18px;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.IdName label input{
+    background-color: rgba(144, 165, 42, 0.213);
+    color: aqua;
+    border: 1px solid blueviolet;
+}
+.BoxSub label input {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  color: rgb(69, 208, 69);
+  background-color: pink;
+  border: 1px solid rgb(100, 120, 0);
+}
+.BoxSub button {
+  margin: 4% 45%;
+  padding: 10px;
+  color: aqua;
+  background-color: rgb(255, 119, 0);
+  border: 1px solid rgb(255, 119, 0) ;
+}
+.BoxSub button:hover{
+    color: black;
+    opacity: 0.5;
+}
+table{
+    border: 4px solid red;
+}
+thead{
+    font-size: 25px;
+    border: 3px solid white;
+}
+tbody tr td {
+  border: 4px solid black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+tbody tr:hover td {
+    background-color: aquamarine;
+}
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 420px;
+        height: 100%;
+    }
+    .IdName {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .IdName label{
+        font-size: 13px; 
+       
+    }
+    .IdName label input{
+        padding: 3px;
+    }
+    .BoxSub {
+        text-align: center;
+        width: 300px;
+        height: 500px;
+    }
+    .BoxSub button{
+       margin: 5% ;
+    }
+    table{
+      margin-top: 250px;
+    }
+    
+}
